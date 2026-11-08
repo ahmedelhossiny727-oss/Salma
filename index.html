@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salma</title>
+    <style>
+        body {
+            margin: 0;
+            position: relative;
+            height: auto;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            isolation: isolate;
+            overflow-y: auto;
+            overflow-x: hidden;
+            background-image: url(Salma.png);
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh;
+            background-position: center;
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .top-box {
+            width: 100%;
+            box-sizing: border-box;
+            height: 65px;
+            background: linear-gradient(135deg, #ffcee2, #ff9dc9);
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+            border: 1px solid #ff9dc9;
+            border-radius: 1%;
+            box-shadow: 0 20px 50px rgba(246, 245, 245, 0.373);
+            position: relative;
+            display: flex;
+            overflow: hidden;
+            top: -360px;
+        }
+
+        .box-2 {
+            position: absolute;
+            width: 120%;
+            height: 120px;
+            top: 800px;
+            left: 2;
+            bottom: 0;
+            box-sizing: border-box;
+            background: linear-gradient(135deg, #ff9dc9, #ffcee2);
+            border: 1px solid #ff9dc9;
+            border-radius: 1%;
+            box-shadow: 0 20px 50px rgba(246, 245, 245, 0.373);
+            overflow: hidden;
+            z-index: 1;
+            display: flex;
+        }
+
+        .btu-one {
+            width: 100px;
+            height: 45px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-color: #ff9dc9;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #ffcee2, #ff9dc9);
+            color: white;
+            top: 9px;
+            left: 91%;
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+            position: relative;
+            align-items: center;
+            box-shadow: 0px 8px 20px #ffecf3;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: gyueg;
+        }
+
+        .btu-one:hover {
+            transform: scale(1.07);
+            background: linear-gradient(135deg, #ff9dc9, #ffcee2);
+            color: #92005b;
+            box-shadow: 0 0 15px #ff9dc9, 0 0 30px #ffecf3, 0 0 25px ;
+        }
+
+        .btu-two  {
+            width: 100px;
+            height: 45px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-color: #ff9dc9;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #ffcee2, #ff9dc9);
+            color: white;
+            top: 9px;
+            left: 77%;
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+            position: relative;
+            align-items: center;
+            box-shadow: 0px 8px 20px #ffecf3;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: gyueg;
+        }
+
+        .btu-two:hover {
+            transform: scale(1.07);
+            background: linear-gradient(135deg, #ff9dc9, #ffcee2);
+            color: #92005b;
+            box-shadow: 0 0 15px #ff9dc9, 0 0 30px #ffecf3, 0 0 25px ;
+        }
+
+        .HomePage {
+            width: 100px;
+            height: 45px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-color: #ff9dc9;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #ffcee2, #ff9dc9);
+            color: white;
+            top: 9px;
+            left: 63%;
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+            position: relative;
+            align-items: center;
+            box-shadow: 0px 8px 20px #ffecf3;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: gyueg;
+        }
+
+        .HomePage:hover {
+            transform: scale(1.07);
+            background: linear-gradient(135deg, #ff9dc9, #ffcee2);
+            color: #92005b;
+            box-shadow: 0 0 15px #ff9dc9, 0 0 30px #ffecf3, 0 0 25px ;
+        }
+
+        .heart {
+            position: fixed;
+            bottom: -40px;
+            font-size: 30px;
+            pointer-events: none;
+            z-index: 9999;
+            animation: flyHeart 6s ease-out forwards;
+        }
+
+        @keyframes flyHeart {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-125vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        #signupPage::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image: url(Salma.png);
+            background-size: cover;
+            background-position: center;
+            filter: blur(4px);
+            transform: scale(1.02);
+            z-index: -1;
+        }
+
+        .text {
+            top: 20px;
+            display: inline;
+            width: fit-content;
+            background-image: linear-gradient(90deg, #92005b, #f9509c);
+            left: 103px;
+            font-family: ex;
+            text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            background-clip: text;
+            color: transparent;
+            position: fixed;
+            font-size: 30px;
+        }
+
+        .back-home {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 45px;
+            height: 45px;
+            border: 1px solid rgba(255,255,255,0.5);
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f9509c, #ffcee2);
+            backdrop-filter: blur(8px);
+            color: white;
+            font-size: 30px;
+            padding-bottom: 4.7px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .back-home:hover {
+            background: #ff9dc9;
+            transform: translateY(-50%) scale(1.15);
+            box-shadow: 0 0 20px #ff9dc9;
+        }
+
+        .signup-box {
+            width: 400px;
+            height: 580px;
+            border-radius: 25px;
+            background: linear-gradient(135deg, #ff9dc9, #fb70cd, #ffcee2);
+            position: absolute;
+            top: 43%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .submit {
+            width: 110px;
+            height: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-color: #ff9dc9;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #ffcee2, #ff9dc9);
+            color: white;
+            top: 470px;
+            left: 34.2%;
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+            position: relative;
+            align-items: center;
+            box-shadow: 0px 8px 20px #ffecf3;
+            font-size: 22px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-family: gyueg;
+        }
+
+        .submit:hover {
+            transform: scale(1.07);
+            background: linear-gradient(135deg, #ff9dc9, #ffcee2);
+            color: #92005b;
+            box-shadow: 0 0 15px #ff9dc9, 0 0 30px #ffecf3, 0 0 25px ;
+        }
+
+        #signupPage {
+            position: fixed;
+            inset: 0;
+            z-index: 10;
+        }
+
+        #signupPage[hidden] {
+            display: none;
+        }
+
+    </style>
+    </head>
+    <body>
+        <div class="top-box">
+            <button class="btu-one" onclick="showSignup()">Sign Up</button>
+            <button class="btu-two">Log In</button>
+            <button class="HomePage">HomePage</button>
+        </div>
+        <div class="box-2">
+
+        </div>  
+        <div id="signupPage" hidden>
+            <div class="signup-box">
+        <div class="text">Create Account</div>
+        <button class="submit">Submit</button>
+        </div>
+
+        <button class="back-home" onmouseenter="showHome()">&#8592</button>
+        </div>
+            <script src="FF.js"></script> 
+
+            <script>
+        function showSignup() {
+        document.getElementById("signupPage").hidden = false;
+        }
+
+        function showHome() {
+        document.getElementById("signupPage").hidden = true;
+        }
+        </script> 
+    </body>
+</html>
